@@ -1,0 +1,64 @@
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  background-color: darkcyan;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .game {
+    margin: 0 auto;
+    width: 800px;
+
+    .visible {
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(7, 100px);
+      grid-template-rows: repeat(6, 100px);
+      gap: 5px;
+      background-color: #ccc;
+      padding: 5px;
+
+      .cell {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .empty {
+        background-color: #ccc;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: rgb(114, 111, 111);
+      color: #fff;
+      font-style: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input {
+      margin: 20px;
+    }
+  }
+
+}
